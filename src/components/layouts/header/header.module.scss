@@ -5,7 +5,9 @@
   padding: 2% 0;
   transition: all 0.5s;
   box-shadow: 0 8px 8px -4px lightblue;
-
+  a {
+    text-decoration: none;
+  }
   .navBar {
     .toggleMode {
       display: inline-block;

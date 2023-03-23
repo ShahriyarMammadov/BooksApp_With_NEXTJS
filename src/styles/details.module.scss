@@ -1,0 +1,84 @@
+.parentDiv {
+  .detailCard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8% 2%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    .imageLeft {
+      img {
+        width: 260px;
+        height: 350px;
+
+        @media only screen and (max-width: 600px) {
+          width: 320px;
+          height: 410px;
+        }
+      }
+    }
+
+    .rightDetail {
+      color: #0f3d3e;
+      span {
+        color: #61764b;
+      }
+
+      .authorInfo {
+        .author {
+          display: flex;
+          gap: 15px;
+          flex-wrap: wrap;
+        }
+      }
+
+      .saleInfo {
+        display: flex;
+        gap: 20px;
+
+        h6 {
+          display: inline;
+        }
+      }
+
+      .categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 10px 0;
+      }
+
+      .description {
+        .dimension {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+          margin-top: 10px;
+        }
+      }
+
+      .identifier {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 10px 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #61764b;
+        display: block;
+        padding-top: 15px;
+
+        &:hover {
+          color: #0f3d3e;
+        }
+      }
+    }
+  }
+}

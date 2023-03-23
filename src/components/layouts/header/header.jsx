@@ -10,22 +10,7 @@ const Header = () => {
           <Link href={"/"}>Magic Books</Link>
         </div>
         <nav className={styles.navBar}>
-          <Link href={"/bestsellers"}>Best Sellers Books</Link>
-          <div className={styles.toggleMode}>
-            <i
-              className="fa-solid fa-moon"
-              // onClick={() => {
-              //   setToggleMode(false);
-              // }}
-            ></i>
-
-            {/* <i
-              className="fa-solid fa-sun"
-              onClick={() => {
-                setToggleMode(true);
-              }}
-            ></i> */}
-          </div>
+          <Link href={"/bestsellersbook"}>Best Sellers Books</Link>
         </nav>
       </header>
     </>

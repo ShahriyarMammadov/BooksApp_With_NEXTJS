@@ -1,27 +1,56 @@
-.section1 {
+.homeMain {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2%;
+  margin-top: 30px;
+
+  .components {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .searchInput {
+      width: 600px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.section1 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-  margin-top: 40px;
+  margin-top: 20px;
+  padding-bottom: 100px;
 
   .cards {
-    width: 15%;
+    width: 200px;
 
     .card {
-      background-color: darkcyan;
+      background-color: #609966;
+      padding: 10px;
       border-radius: 10px;
       height: 300px;
+      color: white;
+      transition: all 0.8s;
+
+      &:hover {
+        background-color: #9dc08b;
+      }
 
       img {
+        width: 100%;
+        height: 230px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
       }
 
       span {
         color: red;
+        text-decoration: underline;
         cursor: pointer;
       }
     }
